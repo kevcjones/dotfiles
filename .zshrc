@@ -3,7 +3,7 @@ export ZSH="~/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
 
-plugins=(git vscode web-search brew)
+plugins=(git vscode web-search brew zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -16,7 +16,4 @@ alias c='clear'                             # c:            Clear terminal displ
 export AWS_PAGER=''
 export EDITOR='nano'
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-autoload bashcompinit && bashcompinit
 complete -C "$(which aws_completer)" aws
