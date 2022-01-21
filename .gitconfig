@@ -1,0 +1,25 @@
+[user]
+	name = Jamie Roos
+	email = jamieroos1@gmail.com
+[alias]
+	co = checkout
+	st = status -sb
+	last = log -1 HEAD
+	l = log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit
+[core]
+	editor = nano
+	autocrlf = input
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[push]
+	default = simple
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
