@@ -1,4 +1,4 @@
-export ZSH="/Users/jamieroos/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
