@@ -25,3 +25,10 @@ source "$ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # For zsh-completions
 autoload -U compinit && compinit
+
+# https://www.matscloud.com/blog/2020/06/25/how-to-use-aws-cdk-with-aws-sso-profiles/
+function awssso() {
+    aws sso login --profile $1
+    export AWS_PROFILE=$1
+    python3 ~/.aws_sso.py $1
+}
