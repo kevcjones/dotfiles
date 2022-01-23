@@ -21,7 +21,7 @@ export PATH="/usr/local/bin/code:$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:
 
 complete -C "$(which aws_completer)" aws
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source "$ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # For zsh-completions
 autoload -U compinit && compinit
