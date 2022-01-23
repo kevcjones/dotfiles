@@ -3,7 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
 
-plugins=(git vscode web-search brew zsh-syntax-highlighting)
+plugins=(git vscode web-search brew zsh-completions zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
 
@@ -20,3 +20,8 @@ export EDITOR='nano'
 export PATH="/usr/local/bin/code:$HOME/Library/Python/3.8/bin:/opt/homebrew/bin:$PATH"
 
 complete -C "$(which aws_completer)" aws
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# For zsh-completions
+autoload -U compinit && compinit
