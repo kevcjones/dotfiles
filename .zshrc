@@ -26,6 +26,10 @@ source "$ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 # For zsh-completions
 autoload -U compinit && compinit
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # https://www.matscloud.com/blog/2020/06/25/how-to-use-aws-cdk-with-aws-sso-profiles/
 function awssso() {
     aws sso login --profile $1
