@@ -25,7 +25,7 @@ complete -C "$(which aws_completer)" aws
 source "$ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # For zsh-completions
-autoload -U compinit && compinit
+autoload -U compinit && compinit -i
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
