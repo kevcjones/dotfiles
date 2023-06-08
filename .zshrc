@@ -11,7 +11,6 @@ alias ll='exa --long --header --git'        # Preferred 'ls' implementation
 alias l='ll'
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
-alias docker='podman'
 
 # Writes AWS CLI v2 commands straight to console i.e. without paging
 export AWS_PAGER=''
