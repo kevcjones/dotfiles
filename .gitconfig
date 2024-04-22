@@ -1,7 +1,6 @@
 [user]
-	name = Jamie Roos
-	email = jamieroos1@gmail.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILnHUWUI2ljbgeGQwdRV3PdpcrXXhhzUILr/5nthLQHT
+	name = Kevin Jones
+	email = him@codebykev.dev
 [alias]
 	co = checkout
 	st = status -sb
@@ -25,9 +24,3 @@
 	diff = auto
 	interactive = auto
 	status = auto
-[gpg]
-	format = ssh
-[gpg "ssh"]
-	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
-[commit]
-	gpgsign = true

@@ -7,7 +7,7 @@ plugins=(git vscode web-search brew zsh-completions zsh-syntax-highlighting)
 
 source "$ZSH/oh-my-zsh.sh"
 
-alias ll='exa --long --header --git'        # Preferred 'ls' implementation
+alias ll='eza --long --header --git'        # Preferred 'ls' implementation
 alias l='ll'
 alias ~="cd ~"                              # ~:            Go Home
 alias c='clear'                             # c:            Clear terminal display
@@ -37,13 +37,4 @@ function awssso() {
     aws sso login --profile $1
     export AWS_PROFILE=$1
     python3 ~/.aws_sso.py $1
-}
-
-function podman_start() {
-    # this should be run after podman machine init to create the VM
-    podman machine start
-}
-
-function podman_stop() {
-    podman machine stop
 }
